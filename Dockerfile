@@ -13,6 +13,11 @@ COPY . .
 WORKDIR "/src/."
 RUN dotnet build "RoutineService.csproj" -c Release -o /app/build
 
+FROM build AS dev
+WORKDIR "/src"
+ENTRYPOINT ["dotnet", "watch", "run", "--urls=http://+:80"]
+
+
 FROM build AS publish
 RUN dotnet publish "RoutineService.csproj" -c Release -o /app/publish
 
