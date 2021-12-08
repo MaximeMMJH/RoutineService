@@ -159,3 +159,4 @@ C:\Users\HP\Documents\A_School\Fontys\Sem_6_Maatwerk\Individual\Music gym\Backen
 C:\Users\HP\Documents\A_School\Fontys\Sem_6_Maatwerk\Individual\Music gym\Backend\RoutineService\RoutineService\obj\Debug\net5.0\ref\RoutineService.dll
 C:\Users\HP\Documents\A_School\Fontys\Sem_6_Maatwerk\Individual\Music gym\Backend\RoutineService\RoutineService\obj\Debug\net5.0\RoutineService.pdb
 C:\Users\HP\Documents\A_School\Fontys\Sem_6_Maatwerk\Individual\Music gym\Backend\RoutineService\RoutineService\obj\Debug\net5.0\RoutineService.genruntimeconfig.cache
+C:\Users\HP\Documents\A_School\Fontys\Sem_6_Maatwerk\Individual\Music gym\Backend\RoutineService\RoutineService\obj\Debug\net5.0\RoutineService.csproj.AssemblyReference.cache

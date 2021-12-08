@@ -59,6 +59,11 @@ namespace RoutineService
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, RoutineDbContext db)
         {
             db.Database.EnsureCreated();
+
+            foreach (var migration in db.Database.GetPendingMigrations())
+            {
+                Console.WriteLine("Running Migrations: " + migration);
+            }
             db.Database.Migrate();
 
             if (env.IsDevelopment())
