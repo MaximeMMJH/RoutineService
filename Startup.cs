@@ -58,14 +58,6 @@ namespace RoutineService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, RoutineDbContext db)
         {
-            db.Database.EnsureCreated();
-
-            foreach (var migration in db.Database.GetPendingMigrations())
-            {
-                Console.WriteLine("Running Migrations: " + migration);
-            }
-            db.Database.Migrate();
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
