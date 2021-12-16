@@ -26,6 +26,14 @@ namespace RoutineService.Controllers
         }
 
         [HttpGet]
+        [Route("/ping")]
+        public IActionResult Ping()
+        {
+            return Ok("Hello World!");
+        }
+
+
+        [HttpGet]
         [Route("/routines/users/{id}")]
         [Produces(MediaTypeNames.Application.Json)]
         [ProducesResponseType(typeof(RoutineQM[]), StatusCodes.Status200OK)]
