@@ -26,7 +26,7 @@ namespace RoutineService.Controllers
         }
 
         [HttpGet]
-        [Route("/ping")]
+        [Route("/routines/ping")]
         public IActionResult Ping()
         {
             return Ok("Hello World!");
