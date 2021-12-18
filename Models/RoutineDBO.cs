@@ -9,7 +9,6 @@ namespace RoutineService.Models
 {
     public class RoutineDBO
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public Guid Id { get; set; }
         public string Title { get; set; }

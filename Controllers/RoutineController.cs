@@ -117,6 +117,8 @@ namespace RoutineService.Controllers
 
             try
             {
+                routine.Id = Guid.NewGuid();
+
                 return Ok(
                     RoutineMapper.MapToRoutineQM(
                         routineFacade.CreateRoutine(
