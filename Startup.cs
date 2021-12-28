@@ -50,6 +50,14 @@ namespace RoutineService
                 });
             });
 
+            services.AddAuthentication("Bearer")
+                .AddIdentityServerAuthentication("Bearer", options =>
+                {
+                    options.ApiName = "api";
+                    options.Authority = "http://localhost:5443";
+                    options.RequireHttpsMetadata = false;
+                });
+
             services.AddDbContext<RoutineDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySql"), new MySqlServerVersion(new Version(8, 0, 23))));
 

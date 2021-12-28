@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RoutineService.Logic;
@@ -14,6 +15,7 @@ namespace RoutineService.Controllers
 {
     [ApiController]
     [Route("/routines")]
+    [Authorize(AuthenticationSchemes = "Bearer")]
     public class RoutineController : Controller
     {
         private readonly ILogger<RoutineController> logger;
