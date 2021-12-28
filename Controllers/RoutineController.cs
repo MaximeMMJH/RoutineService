@@ -15,7 +15,7 @@ namespace RoutineService.Controllers
 {
     [ApiController]
     [Route("/routines")]
-    [Authorize(AuthenticationSchemes = "Bearer")]
+    ///[Authorize(AuthenticationSchemes = "Bearer")]
     public class RoutineController : Controller
     {
         private readonly ILogger<RoutineController> logger;
