@@ -54,7 +54,7 @@ namespace RoutineService
                 .AddIdentityServerAuthentication("Bearer", options =>
                 {
                     options.ApiName = "api";
-                    options.Authority = "http://localhost:5443";
+                    options.Authority = "http://20.50.160.54";
                     options.RequireHttpsMetadata = false;
                 });
 
